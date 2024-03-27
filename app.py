@@ -7,7 +7,7 @@ from markupsafe import Markup  # Nhập thư viện markdown
 app = Flask(__name__)
 
 # Giả sử bạn đã cấu hình API_KEY ở đâu đó
-API_KEY = 'AIzaSyDc0INM_VD34HQUzXYpkpPW_ua51RZx8JM'
+API_KEY = 'YOUR_API_KEY'
 genai.configure(api_key=API_KEY)
 model = genai.GenerativeModel('gemini-pro')
 chat = model.start_chat(history=[])
